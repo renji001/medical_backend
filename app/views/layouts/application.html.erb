@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MedicalClub</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body class="nav-md  footer_fixed">
+<div class="container body">
+  <div class="main_container">
+    <!-- left sidebar -->
+    <div class="col-md-3 left_col menu_fixed" >
+      <div class="left_col scroll-view">
+        <%= render partial: 'layouts/sidebar' %>
+      </div>
+    </div>
+    <!-- /left sidebar  -->
+
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu ">
+        <nav>
+          <%= render partial: 'layouts/header' %>
+        </nav>
+      </div>
+    </div>
+    <!-- /top navigation -->
+
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <%= yield %>
+    </div>
+    <!-- /page content -->
+
+    <!-- footer content -->
+    <footer class="">
+      <%= render partial: 'layouts/footer' %>
+    </footer>
+    <!-- /footer content -->
+  </div>
+</div>
+<%= javascript_include_tag 'application' %>
+</body>
+</html>
