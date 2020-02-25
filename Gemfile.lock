@@ -175,7 +175,7 @@ GEM
     msgpack (1.2.10)
     mysql2 (0.5.2)
     nio4r (2.3.1)
-    nokogiri (1.10.3)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     nprogress-rails (0.2.0.2)
     parsley-rails (2.8.1.0)
